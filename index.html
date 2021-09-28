@@ -17,18 +17,21 @@
           <li class="navigation-item">
             <a class="navigation-list" href="catalog.html">Гостиницы</a>
           </li>
+          <li class="logo">
+            <a class="logo">Логотип Седона</a>
+          </li>
         </ul> 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-list" href="#"> <span class="visualy-hidden"> Поиск</span>
+            <a class="navigation-list" href="#"> <span class="visualy-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-list" href="#"> <span class="visualy-hidden"> Избранное </span>
+            <a class="navigation-list" href="#"> <span class="visualy-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-list" href="#"> <span class="visualy-hidden"> Кнопка входа </span>
+            <a class="navigation-list" href="#"> <span class="visualy-hidden">Кнопка входа</span>
             </a>
           </li>
         </ul> 
@@ -40,12 +43,12 @@
       <section>
         <h2 class="description"> Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
-        <h3 class="reason"> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h3>
+        <span class="reason"> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
       </section>
       <section class="page">
         <h2>Настоящий городок</h2>
         <img class="page" src="#" alt="Городок" width="800">
-         <h3 class="namber">№1</h3>         <!--Причина номер один-->
+         <h3 class="number">№1</h3>         <!--Причина номер один-->
          <p class="transcription"> Седона — не аттракцион для туристов, там течёт 
      своя жизнь</p>
       </section>
@@ -77,27 +80,55 @@
       </section>
       <section>    
       <h2>Небольшая площадь </h2>    
-        <h3 class="namber">№3</h3>
+        <h3 class="number">№3</h3>
         <p class="text">Все достопримечательности находятся очень близко</p> 
       <h2>Красивая дорога</h2>
-         <h3 class="namber">№4</h3>
+         <h3 class="number">№4</h3>
          <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       <h2>Мало туристов</h2>
-          <h3 class="namber">№5</h3>
+          <h3 class="number">№5</h3>
           <p class="text">Большинство едет в Гранд Каньон и толпится там</p>
       </section>
       <section>
         <h2>Заинтересовались ?</h2>
-          <b class="data">Укажите предполагаемые даты поездки,
+          <span class="data">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне
-          </b>
-          <button class="visualy-hidden" type="submit">Поиск гостиницы в Седоне</button>
+          </span>
+          <button class="search" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section>
         <h2>Подпишитесь на рассылку</h2>
-          <b>Только полезная информация и никакого спама,
-            честное бойскаутское!</b>
+          <span>Только полезная информация и никакого спама,
+            честное бойскаутское!</span>
+            <p class="newsletter-email">
+              <label class="visually-hidden" for="newsletter-email">Email</label>
+              <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            </p>
+            <button class="post" type="button">Подписаться</button>
       </section>
     </main>
   </body>
+  <footer>
+    <section class="footer-social">
+      <ul class="footer-social-list">
+        <li class-"footer-social-item">
+          <a class="button" href="#">
+            <span class="visially-hidden">Твиттер</span>
+            </a>
+        </li>
+        <li class-"footer-social-item">
+          <a class="button" href="#">
+            <span class="visially-hidden">fasebook</span>
+            </a>
+        </li>
+        <li class-"footer-social-item">
+          <a class="button" href="#">
+            <span class="visially-hidden">youtube</span>
+            </a>
+        </li>
+      </ul>
+      <address class="footer-contacts">
+      <a class="footer-contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+    </section>
+  </footer>
 </html>
