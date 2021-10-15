@@ -41,19 +41,79 @@ html {height: 100%;}
 body {background-color: bisque;
   color: black;
   display: flex;
+  font-family: "PT Sans", sans-serif;
   flex-direction: column;
   min-height: 100%;
   margin: 0;
+  width: 1200px;
+  height: 3315px;
   font-size: 20px;
   line-height: 36px;
 }
-.page-header{
+.page-header {
   background: blanchedalmond;
   color: black;
-  line-height: 33px;
-  text-decoration: none;
-  text-transform: uppercase; 
-  font-weight: 700;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+.navigation 
+{  
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+}
+.navigation-list {
+margin: 0;
+padding: 0;
+width: 500px;
+}
+.navigation-user {
+  max-width: 304px;
+  margin-left: auto;
+}
+.logo {  
+  display: flex;
+  margin-top: auto;
+  padding-left: 250px;
+}
+div.tab3 {
+  background: url("/images/index-background.jpg");
+  background-position: top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.block2 .tab2 {
+  background: white;
+  width: 1200px;
+  height: 282px;
+  text-align: center;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.number {
+  color: white;
+  display: flex;
+  width: 1200px;
+  height: 384px;
+  margin: auto;
+}
+.number .tab1 {
+  background: #83B3D3;
+  width: 400px;
+  height: 384px;
+  margin-right: auto;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.number .page {
+  padding: auto;
+  margin-left: auto;
+}
+.main-container {
+  flex-grow: 1;
 }
 .visually-hidden {
   position: absolute;
@@ -68,15 +128,8 @@ body {background-color: bisque;
 .page-header .navigation-list .register {
 background: brown;
 }
-.main-index .block1 .logo{
-  background-image: url("/images/logo-background.jpg"),
-  url("/images/welcome.svg") 458px 352px;
-  margin: 0;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
-.social {  width: 1200px;
+.social {  
+  width: 1200px;
   height: 120px;
   background-color: darkgoldenrod;
 }
