@@ -38,7 +38,7 @@
   font-display: swap;
 }
 html {height: 100%;}
-body {background-color: bisque;
+body {background-color: white;
   color: black;
   display: flex;
   font-family: "PT Sans", sans-serif;
@@ -49,6 +49,20 @@ body {background-color: bisque;
   height: 3315px;
   font-size: 20px;
   line-height: 36px;
+}
+.main-container {
+  flex-grow: 1;
+}
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .page-header {
   background: blanchedalmond;
@@ -65,24 +79,26 @@ body {background-color: bisque;
 }
 }
 .navigation-list {
-margin: 0;
-padding: 0;
-width: 500px;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  display: flex;
 }
 .navigation-user {
   max-width: 304px;
   margin-left: auto;
+}
+.catalog-info, .filter-group{
+  display: flex;
 }
 .logo {  
   display: flex;
   margin-top: auto;
   padding-left: 250px;
 }
-div.tab3 {
-  background: url("/images/index-background.jpg");
-  background-position: top;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+.tab3 {
+  background: blanchedalmond;
+
 }
 .block2 .tab2 {
   background: white;
@@ -112,8 +128,57 @@ div.tab3 {
   padding: auto;
   margin-left: auto;
 }
-.main-container {
-  flex-grow: 1;
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.number2 {
+  color: white;
+  display: flex;
+  width: 1200px;
+  height: 384px;
+  margin: auto;
+}
+.number2 .tab4 {
+  background: #83B3D3;
+  width: 400px;
+  height: 384px;
+  margin-right: auto;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.number .bridge {
+  padding: auto;
+  margin-left: auto;
+}
+.list {
+  color: black;
+  display: flex;
+  width: 1200px;
+  height: 384px;
+  margin: auto;
+}
+.list .number3, .list .number5 {
+  background: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 384px;
+  margin-right: auto;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.list .number4 {
+  background: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  height: 384px;
+  margin-right: auto;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .visually-hidden {
   position: absolute;
