@@ -64,8 +64,18 @@ body {background-color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .page-header {
-  background: blanchedalmond;
+  background: white;
   color: black;
   width: 1200px;
   margin: 0;
@@ -77,28 +87,30 @@ body {background-color: white;
   width: 1200px;
   margin: 0 auto;
 }
-}
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 500px;
+  width: 150px;
   display: flex;
 }
 .navigation-user {
-  max-width: 304px;
+  width: 280px;
+  padding-right: 112px;
   margin-left: auto;
 }
-.catalog-info, .filter-group{
+.catalog-info, .filter-group {
   display: flex;
 }
 .logo {  
   display: flex;
   margin-top: auto;
-  padding-left: 250px;
+  padding-left: 350px;
 }
-.tab3 {
-  background: blanchedalmond;
-
+.main-index {
+  background-image: url("../images/index-background.jpg");
+  width: 1200px;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 .block2 .tab2 {
   background: white;
@@ -180,16 +192,6 @@ body {background-color: white;
   margin-top: auto;
   margin-bottom: auto;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .page-header .navigation-list .register {
 background: brown;
 }
@@ -197,13 +199,25 @@ background: brown;
   width: 1200px;
   height: 120px;
   background-color: darkgoldenrod;
+  text-align: justify;
 }
-.social-list {
-  flex-wrap: wrap; 
-  display: block;
+.social .social-list {
+  width: 1200px;
   display: flex;
-  margin: 0;
-  padding-left: 72px;
-  padding-right: 72px;
-  padding-bottom: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+.social .footer-contacts-phone {
+  margin-left: 300px;
+}
+.html-group {
+  margin-left: 900px;
+}
+.subscribe {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  text-align: center;
+  height: 411px;
 }
