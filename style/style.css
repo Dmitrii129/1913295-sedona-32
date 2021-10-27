@@ -198,11 +198,11 @@ background: #A52A2A;
   width: 1200px;
   height: 120px;
   background-color: #b8860b;
-  text-align: justify;
 }
 .social .social-list {
   width: 1200px;
   display: flex;
+  justify-content: space-evenly;
   text-decoration: none;
   text-transform: uppercase;
   list-style-type: none;
@@ -219,4 +219,40 @@ background: #A52A2A;
   width: 1200px;
   text-align: center;
   height: 411px;
+}
+.catalog {display: flex;
+flex-direction: row;
+background-image: url("../images/catalog-background1.jpg");
+width: 1200px;
+height: 408px;
+justify-content: space-around;
+align-items: center;}
+.product-amara {display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;}
+.product-amara.rating {display: flex;
+justify-content: flex-end;}
+.product-desert {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.product-diablo {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.product-green {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+}
+#price {display: flex;
+justify-content: flex-end;}
+input:nth-of-type(button) {
+  background-color: #83B3D3;
 }
