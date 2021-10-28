@@ -80,8 +80,15 @@ body {background-color: #FFFFFF;
   margin: 0;
   padding: 0;
 }
+.advantages-description {
+  width: 250px;
+}
+.advantages-list {
+  list-style: none;
+}
 .navigation 
-{  
+{ 
+  list-style: none; 
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -91,14 +98,51 @@ body {background-color: #FFFFFF;
   padding: 0;
   width: 150px;
   display: flex;
+  list-style: none;
 }
 .navigation-user {
   width: 280px;
   padding-right: 112px;
   margin-left: auto;
 }
+.pagination {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.pagination-link {
+  background-color: #83B3D3;
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  margin: 10px;
+}
+.catalog-filter-group {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+}
+.breadcrumbs {
+  list-style: none;
+}
+.filter-list {
+  list-style: none;
+}
 .catalog-info, .filter-group {
   display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  list-style: none;
+  margin: 40px;
+  justify-content: flex-start;
+}
+.inner-header-title {
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  justify-content: flex-start;
 }
 .logo {  
   display: flex;
@@ -202,13 +246,16 @@ background: #A52A2A;
 .social .social-list {
   width: 1200px;
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-around;
   text-decoration: none;
   text-transform: uppercase;
   list-style-type: none;
 }
 .social .footer-contacts-phone {
-  margin-left: 300px;
+  margin-left: 280px;
+  width: 720px;
+  padding-top: 20px;
 }
 .html-group {
   margin-left: 900px;
