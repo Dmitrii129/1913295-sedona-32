@@ -29,9 +29,9 @@
   font-display: swap;
 }
 
-/* PT Sans Narrow */
+/* PT Sans Regular */
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Regular";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/PTSans-Regular.woff2") format("woff2");
@@ -95,7 +95,7 @@ body {
 .navigation-link {
   display: block;
   padding: 33px 19px;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans Regular", sans-serif;
   line-height: 22px;
   font-weight: 700;
   text-align: center;
@@ -151,62 +151,6 @@ body {
   box-shadow: inset 0 0 0 4px #E7E7E7;
   outline: none;
 }
-/*каталог-преимуществ*/
-.advantages-list {
-  list-style: none;
-  text-align: center;
-}
-.advantages .advantages-title {
-  width: 250px;
-  height: 60px;
-  margin-left: 75px;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-}
-/*каталог - навигация*/
-.pagination {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-}
-.pagination-link {
-  background-color: #83B3D3;
-  width: 55px;
-  height: 55px;
-  padding: 10px;
-  margin: 10px;
-}
-/*каталог-категория*/
-.catalog-filter-group {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-  border: none;
-}
-.breadcrumbs {
-  list-style: none;
-}
-.filter-list {
-  list-style: none;
-}
-.catalog-info, .filter-group {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: center;
-  list-style: none;
-  margin: 40px;
-  justify-content: flex-start;
-}
-.inner-header-title {
-  color: #FFFFFF;
-  display: flex;
-  flex-wrap: wrap;
-  align-self: flex-start;
-  justify-content: flex-start;
-}
 /*индекс-основная страница*/
 .main-container {
   flex-grow: 1;
@@ -233,6 +177,11 @@ body {
   margin-bottom: 0;
 }
 /*индекс-список*/
+.block2 {
+  background-color:#FFFFFF;
+  width: 1200px;
+  height: 282px;
+}
 .block2 .tab2 {
   background: #FFFFFF;
   width: 1200px;
@@ -243,7 +192,7 @@ body {
 }
 .block2 .description {
   font-weight: bold;
-  padding-top: 63px;
+  padding-top: 15px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -251,6 +200,9 @@ body {
 }
 .block2 .reason {
   padding-top: 23px;
+  padding-bottom: 70px;
+  width: 720px;
+  height: 37px;
   font-weight: normal;
   font-size: 22px;
   line-height: 36px;
@@ -301,12 +253,47 @@ body {
   padding: auto;
   margin-left: auto;
 }
+/*индекс-преимуществ*/
+.advantages .advantages-title {
+  width: 250px;
+  height: 60px;
+  margin-left: 75px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advantages .advantages-description {
+  width: 250px;
+  height: 73px;
+  font-weight: normal;
+  font-size: 18px;
+  font-weight: 21px;
+  color: #333333;
+  padding-left: 75px;
+}
 .advantages-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
   text-align: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.advantages .advantages-house {
+  background-color: rgba(131, 179, 211, 0.12);
+  align-self: center;
+  height: 384px;
+}
+.advantages .advantages-food {
+  background-color: #FFFFFF;
+  align-self: center;
+  height: 384px;
+}
+.advantages .advantages-box {
+  background-color: rgba(131, 179, 211, 0.12);
+  align-self: center;
+  height: 384px;
 }
 .number2 {
   color: #FFFFFF;
@@ -426,41 +413,6 @@ body {
 .subscribe, .head {
   color: #FFFFFF;
 }
-.subscribe .field {
-  background-color: #F2F2F2;
-  width: 600px;
-  height: 60px;
-  border-radius: 10px 10px 10px 10px;
-}
-.subscribe .post {
-  width: 200px;
-  height: 60px;
-  background-color: #83B3D3;
-  border-radius: 10px 10px 10px 10px;
-}
-/*подвал*/
-.social {  
-  width: 1200px;
-  height: 120px;
-  background-color: #b8860b;
-}
-.social .social-list {
-  width: 1200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-decoration: none;
-  text-transform: uppercase;
-  list-style-type: none;
-}
-.social .footer-contacts-phone {
-  margin-left: 280px;
-  width: 720px;
-  padding-top: 20px;
-}
-.html-group {
-  margin-left: 900px;
-}
 .subscribe {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
@@ -468,15 +420,56 @@ body {
   text-align: center;
   height: 411px;
 }
+.subscribe .field {
+  background-color: #F2F2F2;
+  width: 600px;
+  height: 60px;
+  margin: 0;
+  border-radius: 10px 10px 10px 10px;
+}
+.subscribe .post {
+  width: 200px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  background-color: #83B3D3;
+  border-radius: 10px 10px 10px 10px;
+}
+/*каталог-фон*/
 .catalog {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   background-image: url("../images/catalog-background1.jpg");
   width: 1200px;
   height: 408px;
-  justify-content: space-around;
-  align-items: center;
 }
+.catalog .breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  color: #FFFFFF;
+  margin-left: 50px;
+}
+.catalog .breadcrumbs-link {
+  margin-left: 11px;
+}
+.inner-header .inner-header-title {
+  display: flex;
+  margin-left: 70px;
+  width: 528px;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 78px;
+  margin-bottom: 11px;
+  margin-top: 35px;
+}
+.catalog-info {
+  color: #FFFFFF;
+}
+.catalog-filter-group .filter-list {
+  display: table;
+} 
+/*отели*/
 .product-amara {
   display: flex;
   flex-direction: row;
@@ -504,10 +497,91 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
 }
+/*каталог - навигация*/
+.pagination {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.pagination-link {
+  background-color: #83B3D3;
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+}
 .input[type="range"] {
   display: flex;
   justify-content: flex-end;
 }
 .input:nth-of-type(button) {
   background-color: #83B3D3;
+}
+/*каталог-категория*/
+.catalog-filter-group {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+}
+.breadcrumbs {
+  list-style: none;
+}
+.filter-list {
+  list-style: none;
+}
+.catalog-info, .filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  list-style: none;
+  margin: 40px;
+  justify-content: flex-start;
+}
+.inner-header-title {
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+/*подвал*/
+.social {  
+  width: 1200px;
+  height: 120px;
+  background-color: #b8860b;
+}
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-social {
+  width: 10px;
+  height: 5px;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 2px;
+  margin-bottom: 30px;
+}
+.footer-social:nth-child(3n) {
+  margin-right: 0;
+}
+.html-group {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
+}
+.footer-contacts-phone {
+  width: 720px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+.htmlacademy-link {
+  width: 115px;
 }
