@@ -410,8 +410,14 @@ body {
   text-transform: uppercase;
 }
 /*индекс-подписаться*/
-.subscribe, .head {
+.subscribe, .head2 {
   color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.head2 {
+  padding: 30px;
 }
 .subscribe {
   background-image: url("../images/background.jpg");
@@ -425,15 +431,18 @@ body {
   width: 600px;
   height: 60px;
   margin: 0;
-  border-radius: 10px 10px 10px 10px;
+  padding: 0;
+  border-width: 0;
+  border-radius: 10px 0px 0px 10px;
 }
 .subscribe .post {
   width: 200px;
   height: 60px;
   margin: 0;
   padding: 0;
+  margin-left: -5px;
   background-color: #83B3D3;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 0px 10px 10px 0px;
 }
 /*каталог-фон*/
 .catalog {
@@ -548,39 +557,33 @@ body {
 }
 /*подвал*/
 .social {  
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
   width: 1200px;
-  height: 120px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #b8860b;
 }
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .footer-social {
-  width: 10px;
-  height: 5px;
-  margin-top: 25px;
-  margin-left: 50px;
-  margin-right: 2px;
-  margin-bottom: 30px;
+  padding: 10px;
 }
 .footer-social:nth-child(3n) {
   margin-right: 0;
 }
-.html-group {
-  display: flex;
-  padding-bottom: 30px;
-  justify-content: space-evenly;
-}
 .footer-contacts-phone {
-  width: 720px;
-  margin-bottom: 30px;
   text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
 }
 .htmlacademy-link {
   width: 115px;
