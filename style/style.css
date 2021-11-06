@@ -772,9 +772,7 @@ body {
   display: flex;
   align-items: center; 
   justify-content: center;
-  width: 625px;
-  height: 60px;
-  color: #FFFFFF;
+  margin-bottom: 30px;
 }
 .box3 .search {
   font-weight: bold;
@@ -793,19 +791,29 @@ body {
 /*каталог - навигация*/
 .catalog-nav {
   display: flex;
+  padding: 16px;
+  background-color: #FFFFFF;
   flex-direction: row;
   list-style-type: none;
 }
 .pagination {
   display: flex;
-  flex-direction: row;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 .pagination-link {
   background-color: #83B3D3;
   list-style-type: none;
   color: #FFFFFF;
   width: 55px;
-  padding: 20px;
+  padding: 14px 20px;
+  display: block;
+  text-align: center;
+  line-height: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
   margin: 10px;
   height: 55px;
   border-radius: 4px;
@@ -822,9 +830,12 @@ body {
 }
 .hotel-catalog {
   display: flex;
+  margin-left: auto;
   flex-direction: row;
   align-items: center;
-  margin-left: 650px;
+}
+.hotel-catalog .hotel {
+  margin-right: 50px;
 }
 .select-control {
   border: 2px solid #E6E6E6;
@@ -956,7 +967,21 @@ input.catalog-max {
   text-align: center;
   min-height: 411px;
 }
-.subscribe-catalog .field {
+.subscribe-catalog .info-catalog {
+  margin-bottom: 26px;
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 800px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form input {
   background-color: #F2F2F2;
   width: 600px;
   height: 60px;
@@ -965,7 +990,7 @@ input.catalog-max {
   border-width: 0;
   border-radius: 10px 0px 0px 10px;
 }
-.subscribe-catalog .post {
+.form button {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;

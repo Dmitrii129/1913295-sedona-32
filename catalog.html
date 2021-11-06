@@ -250,7 +250,7 @@
     </div>
     <section class="box3">
       <h2 class="visually-hidden"> Больше гостиниц </h2>
-    <button class="search" type="button">Загрузить ещё</button>
+      <button class="search" type="button">Загрузить ещё</button>
     </section>
     <div class="catalog-nav">
       <ul class="pagination">
@@ -268,12 +268,10 @@
         </li>
         <li class="pagination-item">
           <span class="pagination-link pagination-prev pagination-disabled">
-            <button>...</button>
+            <a class="pagination-link1">...</a>
           </span>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">
-            <span class="visually-hidden">10</span>
-          </a>
+          <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
       <div class="hotel-catalog">
@@ -289,10 +287,10 @@
       <span class="info-catalog">Только полезная информация и никакого спама,<br>
         честное бойскаутское!</span>
       <div class="newsletter-email">
-        <label class="visually-hidden" for="newsletter-email">Email</label>
-        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-          required>
-        <button class="post" type="button">Подписаться</button>
+        <form class="form" action="#">
+          <input class="field" placeholder="Ваш e-mail" type="email" required>
+          <button class="post" type="submit">Подписаться</button>
+        </form>
       </div>
     </section>
   </main>
