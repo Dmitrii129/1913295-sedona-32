@@ -54,6 +54,10 @@ body {
   line-height: 36px;
 }
 .button {
+  padding: 140px 20px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
   font-family: inherit;
   font-size: 16px;
   line-height: 16px;
