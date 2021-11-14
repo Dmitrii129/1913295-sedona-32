@@ -59,7 +59,7 @@ body {
   justify-self: unset;
   width: 1200px;
   margin: -7px auto;
-  padding-left: 111px;
+  padding-left: 50px;
 }
 
 .navigation-list {
@@ -107,6 +107,16 @@ body {
 .logo {
 
   z-index: 1;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  left: 10px;
+  height: 4px;
+  background-color: #000000;
+  content: "";
 }
 
 .navigation-user .navigation-link {
@@ -579,7 +589,7 @@ body {
 .newsletter-button {
   border-radius: 0px 10px 10px 0px;
   height: fit-content;
-  padding: 25px 19px 22px 22px;
+  padding: 26px 18px 22px 22px;
 }
 
 .newsletter-button:hover {
