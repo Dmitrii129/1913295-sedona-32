@@ -715,18 +715,37 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
 }
+.inner-header-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 78px;
+  padding-bottom: 5px;
+  margin: 0;
+  margin-top: 30px;
+}
 
 .breadcrumbs {
   display: flex;
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs a {
   font-weight: 400;
   text-transform: capitalize;
   margin-top: 5px;
-  margin-right: 26px;
+  margin-right: 16px;
+}
+
+li.breadcrumbs-item {
+  width: 15px;
+}
+
+a.breadcrumbs-link:first-child {
+  width: 12px;
+  height: 21px;
 }
 
 .hotel-search {
@@ -1022,6 +1041,8 @@ body {
 .button-reset {
   background: transparent;
   border: 0px;
+  width: 80px;
+  height: 48px;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1101,6 +1122,12 @@ body {
 .select-control:hover,
 .select-control:focus {
   border: 2px solid #83b3d3;
+}
+
+.catalog-filter-input-price::-webkit-outer-spin-button,
+.catalog-filter-input-price::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .select-control:active {
@@ -1340,7 +1367,7 @@ body {
 }
 
 .modal-container {
-  display: none; /* display: flex; для открытия модального окна */
+  display: flex; /* display: flex; для открытия модального окна */
   position: fixed;
   top: 0;
   left: 0;
