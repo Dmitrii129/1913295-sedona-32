@@ -1119,6 +1119,18 @@ a.breadcrumbs-link:first-child {
   outline: none;
 }
 
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+
 .select-control:hover,
 .select-control:focus {
   border: 2px solid #83b3d3;
@@ -1128,6 +1140,21 @@ a.breadcrumbs-link:first-child {
 .catalog-filter-input-price::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
 }
 
 .select-control:active {
@@ -1367,7 +1394,7 @@ a.breadcrumbs-link:first-child {
 }
 
 .modal-container {
-  display: flex; /* display: flex; для открытия модального окна */
+  display: none; /* display: flex; для открытия модального окна */
   position: fixed;
   top: 0;
   left: 0;
