@@ -789,7 +789,7 @@ a.breadcrumbs-link:first-child {
   display: grid;
   grid-template-columns: 150px 67px 150px 167px 287px 81px 160px;
   margin-top: 26px;
-  margin-bottom: 83px;
+  margin-bottom: 50px;
 }
 
 .catalog-filter-group-infrastructure {
@@ -865,7 +865,7 @@ a.breadcrumbs-link:first-child {
 
 .control-input:focus + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
-  border: 3px inset #83b3d3;
+
 }
 
 .control-input:active + .control-mark {
