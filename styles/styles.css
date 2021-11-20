@@ -59,7 +59,7 @@ body {
   justify-self: unset;
   width: 1200px;
   margin: -7px auto;
-  padding-left: 50px;
+  padding-left: 55px;
 }
 
 .navigation-list {
@@ -413,11 +413,16 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 384px;
+  min-height: 384px;
 }
 .advantages-box-1 {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.advantages-description-foto {
+  display: flex;
   flex-wrap: wrap;
 }
 .advantages-number {
@@ -432,7 +437,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  height: 60px;
+  min-height: 60px;
   text-transform: uppercase;
 }
 
@@ -449,13 +454,13 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
   width: 1200px;
-  height: 384px;
+  min-height: 384px;
 }
 
 .advantages-description-foto {
   color: #ffffff;
   width: 220px;
-  height: 73px;
+  min-height: 73px;
   padding: 30px 90px 77px;
   margin: 0;
 }
@@ -464,14 +469,14 @@ body {
   width: 250px;
   display: flex;
   flex-wrap: wrap;
-  height: 73px;
+  min-height: 73px;
   padding: 26px 75px 77px;
   margin: 0;
 }
 
 .advantages-description-hs-gft-rd {
   width: 250px;
-  height: 73px;
+  min-height: 73px;
   padding: 0px 75px 79px;
   margin: 0;
 }
@@ -743,7 +748,7 @@ input[type="email"]:штмфдшв {
   line-height: 78px;
   padding-bottom: 5px;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 27px;
 }
 
 .breadcrumbs {
