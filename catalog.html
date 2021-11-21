@@ -24,8 +24,8 @@
           </li>
         </ul>
         <a class="logotype" href="index.html">
-        <img class="logo" src="image/logo-sedona.svg" alt="Логотип туристического города Седона" width="138"
-          height="70" /></a>
+          <img class="logo" src="image/logo-sedona.svg" alt="Логотип туристического города Седона" width="138"
+            height="70" /></a>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -134,27 +134,29 @@
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group-infrastructure">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked />
-                    <span class="control-mark"></span>
-                    <span class="control-label">Бассейн</span>
-                  </label>
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked />
-                    <span class="control-mark"></span>
-                    <span class="control-label">Парковка</span>
-                  </label>
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi" />
-                    <span class="control-mark"></span>
-                    <span class="control-label">Wi-Fi</span>
-                  </label>
+                  <div class="control-list">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
+                    </label>
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="parking" checked />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
+                    </label>
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="wi-fi" />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
+                    </label>
+                  </div>
                 </fieldset>
 
                 <fieldset class="catalog-filter-group-type">
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
+                    <li class="catalog-filter-item"> 
                       <label class="control">
                         <input class="visually-hidden control-input" type="radio" name="type-hotel" value="hotel"
                           checked />
@@ -345,7 +347,7 @@
             </ul>
 
             <div class="hotel-page">
-              <span>Гостиниц на странице:</span>
+              <span class="hotel-text">Гостиниц на странице:</span>
               <select class="select-control" name="mumber">
                 <option value="4" selected>4</option>
                 <option value="8">8</option>
@@ -361,7 +363,7 @@
             Подпишитесь на рассылку
           </h2>
           <p>
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама,<br /> честное бойскаутское!
           </p>
           <form class="newsletter-catalog-form" method="post">
             <p class="newsletter-catalog-email">

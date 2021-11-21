@@ -56,9 +56,10 @@ body {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-self: unset;
   width: 1200px;
-  margin: -7px auto;
+  margin: -5px auto;
   padding-left: 55px;
 }
 
@@ -401,13 +402,15 @@ body {
 
 .advantages-column-hs-gft-rd {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.advantages-column-3-4-5 {
-  display: flex;
-  justify-content: center;
+.advantages-foto-section {
+  width: 800px;
+  min-height: 384px;
 }
+
 .advantages-box {
   width: 400px;
   display: flex;
@@ -684,6 +687,7 @@ input[type="email"]:штмфдшв {
 
 .page-footer-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 1200px;
@@ -746,13 +750,14 @@ input[type="email"]:штмфдшв {
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
-  padding-bottom: 5px;
+  padding: 0;
   margin: 0;
   margin-top: 27px;
 }
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -766,7 +771,7 @@ input[type="email"]:штмфдшв {
 }
 
 li.breadcrumbs-item {
-  width: 15px;
+  min-width: 15px;
 }
 
 a.breadcrumbs-link:first-child {
@@ -779,6 +784,7 @@ a.breadcrumbs-link:first-child {
   justify-content: center;
   color: #ffffff;
   padding: 0 72px;
+  min-height: 408px;
   text-align: left;
   background-image: url("../image/catalog/catalog-background.jpg");
   background-size: cover;
@@ -788,7 +794,7 @@ a.breadcrumbs-link:first-child {
 .catalog-filter {
   display: grid;
   grid-template-columns: 150px 67px 150px 167px 287px 81px 160px;
-  margin-top: 26px;
+  margin-top: 45px;
   margin-bottom: 50px;
 }
 
@@ -816,6 +822,10 @@ a.breadcrumbs-link:first-child {
 .catalog-filter-list {
   padding: 0;
   margin: 0;
+}
+
+.control-list {
+  padding-top: 20px
 }
 
 .control {
@@ -865,7 +875,6 @@ a.breadcrumbs-link:first-child {
 
 .control-input:focus + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
-
 }
 
 .control-input:active + .control-mark {
@@ -1036,19 +1045,23 @@ a.breadcrumbs-link:first-child {
   line-height: 26px;
 }
 
-
+ul.catalog-filter-list {
+  padding-bottom: 0;
+  padding-top: 20px;
+}
 
 .button-apply {
   width: 160px;
+  padding: 0;
   height: 48px;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #83b3d3;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  margin-top: 62px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 60px;
   border: 0px;
 }
 
@@ -1092,28 +1105,33 @@ a.breadcrumbs-link:first-child {
   justify-content: space-between;
   margin: 43px 71px;
   align-items: center;
+  align-items: flex-start;
 }
 
 .sorting-container h2 {
   margin: 0;
 }
 .price-list {
-  width: 337px;
-  height: 39px;
+  text-align: start;
+  min-width: 337px;
+  min-height: 39px;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
   line-height: 39px;
 }
 .card-display {
   display: flex;
+  flex-wrap: wrap;
 }
 .card-grid-toggle {
   display: flex;
+  margin-right: 10px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 48px;
-  height: 48px;
+  min-height: 48px;
 }
 
 .card-grid-toggle:hover {
@@ -1136,7 +1154,7 @@ a.breadcrumbs-link:first-child {
 }
 
 .select-control {
-  width: 287px;
+  min-width: 287px;
   padding: 10px 17px;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
@@ -1144,8 +1162,10 @@ a.breadcrumbs-link:first-child {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  margin-left: 20px;
   line-height: 23px;
   color: #333333;
+  text-align: end;
   appearance: none;
   background-image: url("../image/catalog/arrow.svg");
   background-repeat: no-repeat;
@@ -1200,6 +1220,7 @@ input[type="number"]:focus {
   grid-template-columns: 1056px;
   gap: 58px;
   padding: 0;
+  margin-top: 70px;
   margin-left: 72px;
   position: relative;
 }
@@ -1228,6 +1249,9 @@ input[type="number"]:focus {
   box-sizing: border-box;
 }
 
+.hotel-card-image {
+  vertical-align: middle;
+}
 .hotel-card-title {
   grid-area: hotel-card-title;
   color: #000000;
@@ -1340,15 +1364,20 @@ input[type="number"]:focus {
 
 .pagination-container {
   display: flex;
-  width: 1056px;
+  flex-wrap: wrap;
+  min-width: 1056px;
   justify-content: space-between;
   align-items: center;
-  margin-left: 72px;
-  margin-bottom: 89px;
+  margin-left: 30px;
+  margin-right: 50px;
+  margin-top: 45px;
 }
-
+.hotel-text {
+  margin-right: 50px;
+}
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
@@ -1358,8 +1387,8 @@ input[type="number"]:focus {
   font-size: 20px;
   line-height: 26px;
   background-color: #83b3d3;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   text-align: center;
   padding: 12px;
   color: #ffffff;
@@ -1388,11 +1417,12 @@ input[type="number"]:focus {
 
 .pagination-download-more {
   background-color: #83b3d3;
-  width: 625px;
-  height: 55px;
+  min-width: 625px;
+  min-height: 55px;
+  margin-top: 50px;
   border: none;
   padding: 0;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .pagination-item {
@@ -1400,13 +1430,14 @@ input[type="number"]:focus {
 }
 
 .hotel-page .select-control {
-  width: 160px;
+  min-width: 160px;
 }
 
 .newsletter-catalog-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding-top: 26px;
+  padding-top: 22px;
   margin-bottom: 100px;
 }
 
@@ -1424,6 +1455,8 @@ input[type="number"]:focus {
 
 .newsletter-catalog-subscription {
   font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 30px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -1590,11 +1623,13 @@ input[type="number"]:focus {
 
 .person {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .to-book-form-person {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -1605,7 +1640,7 @@ input[type="number"]:focus {
 .to-book-person {
   display: block;
   width: 133px;
-  height: 50px;
+  min-height: 50px;
   margin-bottom: 0;
   border: none;
   background-color: #f2f2f2;
@@ -1624,6 +1659,7 @@ input[type="number"]:focus {
 
 .input-controls {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   position: absolute;
   width: 100%;
