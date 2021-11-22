@@ -1183,7 +1183,7 @@ a.breadcrumbs-link:first-child {
   align-items: center;
   justify-content: center;
   width: 48px;
-  margin-right: 11px;
+  margin-right: 9px;
   min-height: 48px;
 }
 
@@ -1204,10 +1204,11 @@ a.breadcrumbs-link:first-child {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 14px;
+  margin-right: 7px;
 }
 
 .select-control {
-  padding: 8px 13px;
+  padding: 8px 17px;
   width: 287px;
   min-height: 48px;
   border: 2px solid #e6e6e6;
