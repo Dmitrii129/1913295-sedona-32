@@ -183,7 +183,7 @@ body {
 
 
 .popover {
-  display: none; /* display: flex; для включения поповера */
+  display: flex; /* display: flex; для включения поповера */
   position: absolute;
   top: 41px;
   left: 50%;
